@@ -1,0 +1,111 @@
+<html>
+<body>
+
+<head>
+<style>
+.center {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+</head>
+<head>
+   <head>
+<style>
+h1 {
+  border: 2px dashed black;
+  padding: 10px;
+}
+
+<style>
+  h1 {
+    margin: 20px; 
+  }
+  
+</style>
+<style>
+  img {
+    width: 400px; 
+    transition: transform 0.5s; 
+  }
+  
+  img:hover {
+    transform: scale(1.2); 
+  }
+</style>
+<style>
+  h1 {
+    color: darkblue
+  }
+  
+
+</style>
+   <style>
+  h1 {
+    background-color: yellow; 
+    padding: 10px; 
+  }
+</style>
+    <style>
+	body {
+  background-color: lightgreen;
+}
+        .video-container {
+            text-align: center;
+        }
+
+        .video-container iframe {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+
+</script>
+<body>
+
+ <h1>Formulario sobre características personales</h1>
+  <form id="info">
+    <label for="edad">¿Cuántos años tienes?</label>
+    <input type="number" id="edad" name="edad" required>
+    
+    <label for="pelo">¿De qué color tienes el pelo?</label>
+    <input type="text" id="pelo" name="pelo" required>
+    
+    <label for="ojos">¿De qué color son tus ojos?</label>
+    <select id="ojos" name="ojos" required>
+      <option value="">Selecciona un color</option>
+      <option value="marrón">marrón</option>
+      <option value="azul">azul</option>
+      <option value="negro">negro</option>
+      <option value="verde">verde</option>
+	  <option value="rojo">rojo</option>
+      <option value="otro">otro color</option>
+    </select>
+    
+    <input type="submit" value="Enviar">
+  </form>
+  
+  <div id="output"></div>
+  
+  <script>
+    document.getElementById('info').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+	  
+      var edad = document.getElementById('edad').value;
+      var pelo = document.getElementById('pelo').value;
+      var ojos = document.getElementById('ojos').value;
+      
+      var output = "Tienes " + edad + " años.<br>";
+      output += "Tu pelo es de color " + pelo + ".<br>";
+      output += "Tus ojos son de color " + ojos + ".";
+      
+      document.getElementById('output').innerHTML = output;
+    });
+  </script>
+</body>
+</html>

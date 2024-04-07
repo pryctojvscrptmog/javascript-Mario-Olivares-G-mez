@@ -1,0 +1,102 @@
+<html>
+<body>
+
+<head>
+<style>
+.center {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+</head>
+<head>
+   <head>
+<style>
+h1 {
+  border: 2px dashed black;
+  padding: 10px;
+}
+
+<style>
+  h1 {
+    margin: 20px; 
+  }
+  
+</style>
+<style>
+  img {
+    width: 400px; 
+    transition: transform 0.5s; 
+  }
+  
+  img:hover {
+    transform: scale(1.2); 
+  }
+</style>
+<style>
+  h1 {
+    color: darkblue
+  }
+  
+
+</style>
+   <style>
+  h1 {
+    background-color: yellow; 
+    padding: 10px; 
+  }
+</style>
+    <style>
+	body {
+  background-color: lightgreen;
+}
+        .video-container {
+            text-align: center;
+        }
+
+        .video-container iframe {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+
+</script>
+<body>
+
+ <h1>Suma de dos números a y b</h1>
+  <form id="suma">
+    <label for="num1">número a:</label>
+    <input type="number" id="num1" name="num1" required>
+    
+
+
+    <label for="num2">número b:</label>
+    <input type="number" id="num2" name="num2" required>
+    
+    <input type="submit" value="sumar a+b">
+  </form>
+  
+
+  <div id="resultado"></div>
+  
+  <script>
+    document.getElementById('suma').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+
+      
+      var num1 = parseFloat(document.getElementById('num1').value);
+      var num2 = parseFloat(document.getElementById('num2').value);
+      
+      var suma = num1 + num2;
+      
+
+      document.getElementById('resultado').innerHTML = "a+b= " + suma;
+    });
+  </script>
+</body>
+</html>
